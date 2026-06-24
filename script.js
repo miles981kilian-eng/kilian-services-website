@@ -57,3 +57,17 @@ requestAnimationFrame(animate);
 }
 
 animate();
+const reveals = document.querySelectorAll('.service-card, .portfolio-card');
+
+window.addEventListener('scroll', () => {
+    reveals.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 100){
+            card.classList.add('active');
+        }
+    });
+});
+
+reveals.forEach(card => card.classList.add('reveal'));
+it

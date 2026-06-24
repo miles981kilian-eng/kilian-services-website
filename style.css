@@ -55,7 +55,11 @@ text-decoration:none;
 
 .hero{
     text-align:center;
-    padding:160px 20px 120px;
+    padding:120px 20px 80px;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .hero h1{
@@ -365,4 +369,14 @@ body::before{
     to{
         transform:translateY(-30px);
     }
+}
+.reveal{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
 }

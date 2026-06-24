@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kilian Services | Web Development & Cybersecurity</title>
     <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 <body>
 
@@ -80,7 +82,7 @@
 
 </section>
 
-<section id="about">
+<section id="about" data-aos="fade-up">
     <h2>About Me</h2>
 
 
@@ -94,7 +96,7 @@
 
 </section>
 
-<section id="services">
+<section id="services" data-aos="fade-right">
 
     <h2>Our Services</h2>
 
@@ -129,7 +131,7 @@
 
 </section>
 
-<section id="portfolio">
+<section id="portfolio" data-aos="zoom-in">
 
     <h2>Recent Projects</h2>
 
@@ -194,7 +196,7 @@
 
 </section>
 
-<section id="contact">
+<section id="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
 
 
@@ -261,5 +263,13 @@
 <a href="https://wa.me/254703119076" class="whatsapp-btn">
     WhatsApp Us
 </a>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration:1000,
+once:false
+});
+</script>
 </body>
 </html>

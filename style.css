@@ -133,3 +133,36 @@ padding:15px 25px;
 border-radius:8px;
 cursor:pointer;
 }
+.hero h1{
+    animation: floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText{
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+.hero h1{
+    text-shadow:
+    0 0 10px rgba(59,130,246,0.4),
+    0 0 20px rgba(59,130,246,0.3),
+    0 0 30px rgba(59,130,246,0.2);
+}
+footer{
+    text-align:center;
+    padding:40px;
+    background:#020617;
+    border-top:1px solid #1e293b;
+}
+
+footer p{
+    margin:10px 0;
+}

@@ -1,3 +1,12 @@
+#bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-2;
+}
+
 html{
     scroll-behavior:smooth;
 }
@@ -303,10 +312,19 @@ nav a:hover{
         font-size:1rem;
     }
 
-    .services-grid,
-    .portfolio-grid{
-        grid-template-columns:1fr;
-    }
+    .services-grid{
+    flex-direction:column;
+    align-items:center;
+}
+
+.portfolio-grid{
+    grid-template-columns:1fr;
+}
+
+.service-card{
+    width:100%;
+    max-width:400px;
+}
 
     section{
         padding:70px 20px;

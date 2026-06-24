@@ -166,3 +166,41 @@ footer{
 footer p{
     margin:10px 0;
 }
+.services-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:40px 20px;
+}
+
+.service-card{
+    width:300px;
+    background:#0f172a;
+    border:1px solid #1e3a8a;
+    border-radius:15px;
+    padding:30px;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(59,130,246,0.15);
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(59,130,246,0.4);
+}
+
+.service-card h3{
+    color:#60a5fa;
+}
+.whatsapp-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:50px;
+    font-weight:bold;
+    z-index:999;
+}
